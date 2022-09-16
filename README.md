@@ -18,3 +18,7 @@
   ```shell
   docker compose run --rm app sh -c "python manage.py test"
   ```
+- create core app to configure our application to wait postgresql db until it starts
+  ```shell
+  docker compose run --rm app sh -c "python manage.py startapp core"
+  ```
