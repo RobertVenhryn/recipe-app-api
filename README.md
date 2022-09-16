@@ -14,3 +14,7 @@
   ```shell
   docker compose up
   ```
+- run tests
+  ```shell
+  docker compose run --rm app sh -c "python manage.py test"
+  ```
