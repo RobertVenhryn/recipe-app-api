@@ -1,5 +1,5 @@
 # recipe-app-api
-## required steps
+## notes
 - configure [docker hub](https://hub.docker.com/settings/security) with access token for [github project](https://github.com/RobertVenhryn/recipe-app-api/settings/secrets/actions/new)
 - to run flake8 testing:
   ```shell
@@ -37,4 +37,7 @@
   docker volume rm recipe-app-api_dev-db-data
   docker compose run --rm app sh -c "python manage.py wait_for_db && python manage.py migrate"
   ```
-
+- create django superuser
+  ```shell
+  docker compose run --rm app sh -c "python manage.py createsuperuser"
+  ```
