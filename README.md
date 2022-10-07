@@ -41,3 +41,7 @@
   ```shell
   docker compose run --rm app sh -c "python manage.py createsuperuser"
   ```
+- create user app
+  ```shell
+  docker compose run --rm app sh -c "python manage.py startapp user"
+  ```
